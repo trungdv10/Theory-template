@@ -1,0 +1,64 @@
+.content .menu .right a {
+    display: none;
+}
+.content .menu .right span {
+    display: inline-block;
+    cursor: pointer;
+}
+
+/* news */
+.content .news .item {
+    width: 100%;
+}
+.content .news .item:not(:last-child)::before {
+    border-right: none;
+    border-bottom: 1px solid #dbdbdb;
+    margin-top: 40px;
+    right: 0;
+}
+.content .news .item:not(:first-child) {
+    margin-top: 50px;
+}
+
+/* users */
+.content .users .list {
+    display: flex;
+    flex-wrap: wrap;
+}
+.content .users .list .item {
+    width: 47%;
+}
+
+/* special */
+.content .special .list .item {
+    width: 100%;
+}
+.content .special .list .item:nth-child(2) {
+    margin-top: 40px;
+}
+
+/* footer */
+.content .footer .inner {
+    display: flex;
+    padding-top: 0;
+    flex-direction: column;
+    position: relative;
+}
+.content .footer .inner .copyright,
+.content .footer .inner .icons {
+    width: 100%;
+    text-align: center;
+}
+.content .footer .inner .icons {
+    position: absolute;
+    top: 25px;
+}
+.content .footer .inner .copyright {
+    text-align: center;
+    justify-content: center;
+    position: absolute;
+    top: 60px;
+}
+.content .footer .icons ul {
+    text-align: center;
+}
